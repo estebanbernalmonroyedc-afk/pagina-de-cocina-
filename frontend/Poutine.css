@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: rgb(42, 183, 210);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.titulo {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* CONTENIDO PRINCIPAL */
+.container {
+    width: 75%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+.receta h2 {
+    font-size: 2rem;
+    color: rgb(136, 58, 102);
+    margin-bottom: 10px;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.meta a {
+    color: rgb(42, 183, 210);
+    text-decoration: none;
+}
+.meta a:hover {
+    text-decoration: underline;
+}
+
+.imagen-receta {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagen-receta img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: rgb(136, 58, 102);
+    margin-top: 25px;
+}
+
+ul, ol {
+    margin-left: 25px;
+}
+
+.consejo {
+    background-color: #f0f8ff;
+    padding: 12px;
+    border-left: 4px solid rgb(42, 183, 210);
+    margin: 25px 0;
+    font-style: italic;
+}
+
+.nota-final {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* COMENTARIOS */
+.comentarios {
+    margin-top: 40px;
+}
+
+.comentarios h4 {
+    font-size: 1.2rem;
+    color: rgb(136, 58, 102);
+    margin-bottom: 15px;
+}
+
+.comentario {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.comentario .autor {
+    font-weight: bold;
+    color: #444;
+}
+
+.form-comentario {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-comentario textarea {
+    resize: vertical;
+    min-height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-comentario button {
+    background-color: rgb(136, 58, 102);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.form-comentario button:hover {
+    background-color: rgb(100, 40, 80);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(175, 175, 175);
+    color: rgb(136, 58, 102);
+    font-weight: bold;
+    margin-top: 40px;
+}

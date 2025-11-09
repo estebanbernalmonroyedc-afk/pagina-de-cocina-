@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+/* --- ENCABEZADO --- */
+header {
+    background-color: rgb(42, 183, 210);
+}
+
+.navbar {
+    height: 100px; /* altura visible */
+}
+
+.titulo {
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Times New Roman", Georgia, serif;
+    text-align: center;
+}
+
+/* --- LINKS DE NAVEGACIÓN (si en un futuro los usas) --- */
+.navbar .nav-link {
+    color: rgb(136, 58, 102);
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* --- CARRUSEL --- */
+.d-block {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* --- TARJETAS DE RECETA --- */
+.receta img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.receta {
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    border: none;
+    transition: 0.3s;
+}
+
+.receta:hover {
+    transform: scale(1.03);
+}
+
+/* --- TÍTULOS Y COLORES --- */
+h2 {
+    color: rgb(136, 58, 102);
+    font-weight: bold;
+}
+
+/* --- PIE DE PÁGINA --- */
+.banner {
+    background-color: rgb(175, 175, 175);
+    color: rgb(136, 58, 102);
+    padding: 20px;
+    font-weight: bold;
+}

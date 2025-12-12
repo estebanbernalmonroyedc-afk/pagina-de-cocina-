@@ -1,18 +1,18 @@
 const express = require('express');
-require('dotenv').config();
+const dotenv = require('dotenv');
+const recetasRoutes = require('./routes/recetasRoutes'); 
 
+dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
-
-const recetasRoutes = require('./routes/recetasRoutes');
-app.use('/recetas', recetasRoutes);
-
-app.get('/', (req, res) => {
-    res.json({ message: 'API funcionando correctamente' });
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
 });
 
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en el puerto ${PORT}`);
+app.use('/', recetasRoutes);
+
+app.listen(process.env.PORT, () => {
+    console.log(`Servidor backend iniciado en puerto ${process.env.PORT}`);
 });
